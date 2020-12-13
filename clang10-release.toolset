@@ -1,4 +1,4 @@
 
 template: __builtin_clang
-compiler-cpp: clang++-10 -stdlib=libc++ -O3 -march=znver2 -pthread -Wall -Wextra -Wpedantic -Werror -std=c++2a -maes -mpclmul
+compiler-cpp: clang++-10 -stdlib=libc++ -O3 -pthread -Wall -Wextra -Wpedantic -Werror -std=c++2a -maes -mpclmul
 linker: clang++-10 -stdlib=libc++ -pthread -std=c++2a -O3
