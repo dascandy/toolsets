@@ -1,4 +1,4 @@
 
 template: __builtin_clang
-compiler-cpp: clang++-10 -stdlib=libc++ -pthread -Wall -Wextra -Wpedantic -Werror -std=c++2a -maes -mpclmul
-linker: clang++-10 -stdlib=libc++ -pthread -std=c++2a
+compiler-cpp: clang++-10 -stdlib=libc++ -pthread -Wall -Wextra -Wpedantic -Werror -std=c++2a -maes -mpclmul -g2 -fsanitize=address,undefined
+linker: clang++-10 -stdlib=libc++ -pthread -std=c++2a -fsanitize=address,undefined
