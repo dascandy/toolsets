@@ -1,4 +1,4 @@
 
 template: __builtin_clang
-compiler-cpp: clang++-12 -stdlib=libc++ -pthread -Wall -Wextra -Wpedantic -Werror -std=c++2a -maes -mpclmul -g2 -fsanitize=address,undefined
+compiler-cpp: clang++-12 -stdlib=libc++ -pthread -Wall -Wextra -Wpedantic -Werror -std=c++2a -maes -mpclmul -g2 -fsanitize=address,undefined -DBOOST_THREAD_USES_MOVE -DBOOST_THREAD_PROVIDES_FUTURE -DBOOST_THREAD_PROVIDES_EXECUTORS -DBOOST_THREAD_PROVIDES_FUTURE_WHEN_ALL_WHEN_ANY -DBOOST_THREAD_PROVIDES_FUTURE_CONTINUATION -DBOOST_THREAD_PROVIDES_FUTURE_UNWRAP -DBOOST_BEAST_USE_STD_STRING_VIEW -DBOOST_ASIO_USE_TS_EXECUTOR_AS_DEFAULT
 linker: clang++-12 -stdlib=libc++ -pthread -std=c++2a -fsanitize=address,undefined
